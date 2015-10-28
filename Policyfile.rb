@@ -10,7 +10,14 @@ name "chef-server-ctl"
 default_source :supermarket
 
 # run_list: chef-client will run these recipes in the order specified.
-run_list "chef-server-ctl::default"
+run_list "chef-server-ctl::example"
 
 # Specify a custom source for a single cookbook:
 cookbook "chef-server-ctl", path: "."
+
+default['chef-server']['api_fqdn'] = 'chef.example.com'
+default['chef-server']['addons'] = [
+  "manage",
+  "reporting",
+  "push-server"
+]

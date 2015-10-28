@@ -1,20 +1,20 @@
 {
-  "revision_id": "1083c8544dbb39efe9e59cabb18f4184ec03b12042e59598cc8c9c88f244aed0",
+  "revision_id": "6f892270b2fe3985771c79d39df25491ece0839487d89f625ae247b9524ef13f",
   "name": "chef-server-ctl",
   "run_list": [
-    "recipe[chef-server-ctl::default]"
+    "recipe[chef-server-ctl::example]"
   ],
   "cookbook_locks": {
     "chef-server-ctl": {
       "version": "0.1.0",
-      "identifier": "113b2dd3d58fa111d1dfe45f735592a1511a1e37",
-      "dotted_decimal_identifier": "4850142617636769.5015834143454037.161221548056119",
+      "identifier": "76f33c4edf484e758bc4688b3e0816cc25d65207",
+      "dotted_decimal_identifier": "33481487598700622.33086247958953480.25066063942151",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
         "remote": null,
-        "revision": "8b89f5d0af88a60df9a97ecef98bd9f811b04bef",
+        "revision": "c735cdf4fa40888474f945d1fdd51573e6d6fc12",
         "working_tree_clean": false,
         "published": false,
         "synchronized_remote_branches": [
@@ -93,7 +93,14 @@
     }
   },
   "default_attributes": {
-
+    "chef-server": {
+      "api_fqdn": "chef.example.com",
+      "addons": [
+        "manage",
+        "reporting",
+        "push-server"
+      ]
+    }
   },
   "override_attributes": {
 
