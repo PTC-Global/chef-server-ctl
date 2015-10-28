@@ -28,5 +28,5 @@ platforms:
   - name: centos-7.1
 
 suites:
-  - name: default
+  - name: example
     attributes:
