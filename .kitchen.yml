@@ -1,6 +1,11 @@
 ---
 driver:
   name: vagrant
+  network:
+    - ['private_network', {ip: '33.33.33.25'}]
+  customize:
+    memory: 2048
+    cpus: 2
 
 ## The forwarded_port port feature lets you connect to ports on the VM guest via
 ## localhost on the host.
