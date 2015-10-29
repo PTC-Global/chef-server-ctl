@@ -1,6 +1,6 @@
 # chef-server-ctl
 
-## Cookbook that provides an LWRP for managin User and Orgs by wrapping chef-server-ctl commands
+## Cookbook that provides an LWRP for managing Users and Orgs on your Chef server by wrapping chef-server-ctl commands.
 
 ### Example
 
