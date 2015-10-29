@@ -1,5 +1,5 @@
 {
-  "revision_id": "6f892270b2fe3985771c79d39df25491ece0839487d89f625ae247b9524ef13f",
+  "revision_id": "d19afc0bbe90f4fa3a2c14040e214bc289505d3c77fca5da7ac03a6a4e1fdcda",
   "name": "chef-server-ctl",
   "run_list": [
     "recipe[chef-server-ctl::example]"
@@ -7,14 +7,14 @@
   "cookbook_locks": {
     "chef-server-ctl": {
       "version": "0.1.0",
-      "identifier": "76f33c4edf484e758bc4688b3e0816cc25d65207",
-      "dotted_decimal_identifier": "33481487598700622.33086247958953480.25066063942151",
+      "identifier": "74719d87e3ecfca225465c3c4864908b6df7ce1a",
+      "dotted_decimal_identifier": "32776018702101756.45639930352519268.158928519810586",
       "source": ".",
       "cache_key": null,
       "scm_info": {
         "scm": "git",
-        "remote": null,
-        "revision": "c735cdf4fa40888474f945d1fdd51573e6d6fc12",
+        "remote": "git@github.com:stephenlauck/chef-server-ctl.git",
+        "revision": "e1ca9e361768f845309f0a9a97459bc55f275b41",
         "working_tree_clean": false,
         "published": false,
         "synchronized_remote_branches": [
@@ -137,6 +137,12 @@
       ]
     ],
     "dependencies": {
+      "chef-server-ctl (0.1.0)": [
+        [
+          "chef-server",
+          ">= 0.0.0"
+        ]
+      ],
       "chef-server (4.1.0)": [
         [
           "chef-ingredient",
@@ -170,12 +176,6 @@
       ],
       "yum (3.8.2)": [
 
-      ],
-      "chef-server-ctl (0.1.0)": [
-        [
-          "chef-server",
-          ">= 0.0.0"
-        ]
       ]
     }
   }
