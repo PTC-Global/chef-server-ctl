@@ -16,6 +16,7 @@ driver:
 
 provisioner:
   name: policyfile_zero
+  chef_zero_port: 9012
 
 ## require_chef_omnibus specifies a specific chef version to install. You can
 ## also set this to `true` to always use the latest version.
