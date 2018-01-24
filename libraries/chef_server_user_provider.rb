@@ -3,17 +3,19 @@ require 'chef/provider/lwrp_base'
 class Chef
   class Provider
     class ChefServerUser < Chef::Provider::LWRPBase
-
+      provides :chef_server_user
       use_inline_resources if defined?(use_inline_resources)
 
       def whyrun_supported?
         true
       end
 
+      def chef_server_user; end
+
       action :create do
         execute 'create user' do
           command <<-EOM.gsub(/\s+/, ' ').strip!
-            chef-server-ctl user-create #{new_resource.username}
+            /bin/chef-server-ctl user-create #{new_resource.username}
             #{new_resource.firstname}
             #{new_resource.lastname}
             #{new_resource.email}

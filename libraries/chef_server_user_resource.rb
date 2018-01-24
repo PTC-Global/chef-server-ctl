@@ -4,6 +4,7 @@ class Chef
   class Resource
     class ChefServerUser < Chef::Resource::LWRPBase
       self.resource_name = :chef_server_user
+      provides :chef_server_user
       actions :create, :delete
       default_action :create
 
